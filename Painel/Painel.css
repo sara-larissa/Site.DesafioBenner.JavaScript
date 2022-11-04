@@ -1,10 +1,12 @@
 
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+   
 }
 
 body {
@@ -18,6 +20,8 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(23, 62, 90);
+    padding: 2rem;
 }
 
 .titulo{
@@ -173,7 +177,7 @@ body{
     
 }
 
-input[type='date']{
+/* input[type='date']{
     color: blanchedalmond;
     width: 97%;
     padding-left: 10px;
@@ -181,7 +185,7 @@ input[type='date']{
     font-size: 20px;
     display: flex;
     flex-direction: row;
-}
+} */
 
 
 .desativado{
@@ -305,6 +309,49 @@ label.teste3{
     cursor: pointer;
     
 }
+
+input[type='number']{
+    padding-left: 10px;
+    color: blanchedalmond; 
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type='text']{
+    color: blanchedalmond;
+    padding-left: 10px;
+    width: 98%;
+}
+
+
+table tr td{
+    width: 200px;
+    /* justify-content: space-between;
+    margin-top: 5px; */
+}
+
+
+.itemClasse{
+    font-size: 20px;
+    color:  blanchedalmond; 
+}
+
+.final{
+    display: flex;
+    width: 100%;
+}
+
+#valorFinal{
+    width: 20%;
+    justify-content:end;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+    background-color:  rgb(69, 119, 155) ;
+}
+
 
 input[type='number']{
     padding-left: 10px;
