@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -352,15 +351,3 @@ table tr td{
     background-color:  rgb(69, 119, 155) ;
 }
 
-
-input[type='number']{
-    padding-left: 10px;
-    color: blanchedalmond; 
-    width: 100px;
-    cursor: pointer;
-}
-
-input[type='text']{
-    color: blanchedalmond;
-    padding-left: 10px;
-}
