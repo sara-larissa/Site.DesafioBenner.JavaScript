@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,26 +117,41 @@ href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:ops
                 
                 <label for="username" class="teste3"> <strong>Localizar produto</strong></label> 
                 <div class="localizar" id="idProduto">
-                    <input type ="number" class="escrita numero" name="username" value=""/>
-                    <input type ="text" class="escrita texto" disabled name="username" value=""/>
-                    <input type ="text" class="escrita texto" disabled name="username" value=""/>
-                    <input type ="text" class="escrita numero" name="username" value=""/>
-                    <input type ="text" class="escrita lancar" disabled name="username" value= "LANÇAR NO PEDIDO"/>
+                    <input type ="number" class="escrita numero" id="codigoProduto" />
+                    <input type ="text" class="escrita texto" disabled id="descProd" />
+                    <input type ="text" class="escrita texto" disabled id="valorProd" />
+                    <input type ="text" class="escrita numero" name="username" id="qntProd" value=""/>
+                    <button class="escrita lancar" id="adcnar" type="button">LANÇAR NO PEDIDO</button>
                 </div>
-                <label for="username" class="teste3"> <strong>Item do pedido</strong></label>
-                
-                <input type ="text" class="escrita" name="username" value=""/>
-                
-            </div>
+            <br>
+            <table id="tabela"> 
+                <tbody id="tbody">
+                    <!-- <div id="adcionando"> -->
+                        <thead> <strong>Item do pedido</strong> </thead>
+                <tr>
+                    <td> Item </td>
+                    <td> Descrição </td>
+                    <td> Preço </td>
+                    <td> Quantidade </td>
+                    <td id="acoes"> Sub total </td>
+                </tr>
 
-            <div class="botoes-pedidos">  
-                <button class="botao voltar"> <strong><</strong> </button>
-                <button class="botao vai"><strong>></strong></button>
-                <button class="botao2 novo">Novo</button>
-                <button class="botao2 salvar">Salvar</button>
-
-            </div> 
-
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total(R$): </td>
+                    <td id="total" style="color: crimson"> <strong> 00.00 </strong></td>
+                </tr>
+            </table> 
+            </tbody>
+            </table>
+            <!-- <div class="final">
+                <input type ="text" id="valorFinal"  name="username" value=""/> 
+            </div> -->
+        <!-- </div> -->
+       
+            
         </form> 
 
 
