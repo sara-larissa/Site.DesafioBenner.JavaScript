@@ -1,4 +1,5 @@
 
+
 import{clientes} from '../clientes.js'
 import{produtos} from '../produtos.js'
 
@@ -62,8 +63,12 @@ for (let clicado of navegar){
         let codigo = formClientes[1].value;
     if (evento.target.classList.contains("voltar")){
         navegarClientes(Number(codigo) -1);
-    } else {
+    } else if(codigo != clientes.length){
+
         navegarClientes(Number(codigo)+1);    
+
+    }else{
+        alert('Você chegou no fim da lista');
     }
 
     })
@@ -78,7 +83,7 @@ function navegarClientes(codigo) {
         
     }
     else{
-        alert('Fim da lista')
+        alert('Início da lista')
     }
     console.log(clientes)
 }
@@ -97,9 +102,11 @@ const procurar = document.querySelectorAll(".navegarProdutos");
         if (evento.target.classList.contains("voltar"))  {
             navegarProdutos(Number(codigo) -1);
 
-        } else {
+        } else if(codigo != produtos.length) {
             navegarProdutos(Number(codigo)+1);
-        } 
+        } else {
+            alert('Você chegou ao fim da lista')
+        }
         })
 
     }
@@ -108,12 +115,21 @@ const procurar = document.querySelectorAll(".navegarProdutos");
 
 function navegarProdutos(codigo) {
 
-    formProdutos[1].value = produtos[codigo-1].codProduto;
-    formProdutos[2].value = produtos[codigo-1].descProduto;
-    formProdutos[3].value = produtos[codigo-1].precoProduto;
-    formProdutos[4].value = produtos[codigo-1].qtdEstoqueProd;
 
+    if(codigo-1 >= 0 && codigo <= produtos.length){
+        formProdutos[1].value = produtos[codigo-1].codProduto;
+        formProdutos[2].value = produtos[codigo-1].descProduto;
+        formProdutos[3].value = produtos[codigo-1].precoProduto;
+        formProdutos[4].value = produtos[codigo-1].qtdEstoqueProd;
+        
+    }
+    else{
+        alert('Início da lista')
+    }
+    console.log(produtos)
 }
+
+
 
 const botoes = document.querySelectorAll(".novo");
 
@@ -226,5 +242,6 @@ function listaTabela() {
         let total = document.getElementById("total");
         total.textContent = (Number(total.textContent) + Number(td_acoes.textContent)).toFixed(2);
 }
+
 
 
