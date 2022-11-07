@@ -1,5 +1,4 @@
 
-
 import{clientes} from '../clientes.js'
 import{produtos} from '../produtos.js'
 
@@ -163,6 +162,7 @@ const salvar = document.querySelectorAll(".salvar");
         clicado.addEventListener('click', (evento) => {
           if(evento.target.form.id=="clientes"){
               salvarClientes();
+              alert("Dados cadastrados com sucesso")
                 navegarClientes(1);
           }
             else 
@@ -242,6 +242,4 @@ function listaTabela() {
         let total = document.getElementById("total");
         total.textContent = (Number(total.textContent) + Number(td_acoes.textContent)).toFixed(2);
 }
-
-
 
