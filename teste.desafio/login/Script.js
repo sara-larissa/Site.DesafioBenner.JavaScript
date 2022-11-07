@@ -6,12 +6,21 @@ async function entrarPainel() {
     let usuario = document.querySelector('#email').value;
     let senha = document.querySelector('#password').value;
 
+    let correto;
+    let form;
+    
     dadosJson["users"].forEach(user => {
         console.log(user);
         if(user.user == usuario && user.pws == senha) {
-            let form = document.forms[0]
+           form = document.forms[0];
+           correto = true;
 
-            form.submit();
+        
         }
-    })
+    });
+        if(correto){
+            form.submit();
+        }else{
+            alert("Usuário ou senha incorreta. Favor digite um usuário ou senha válido.");
+        }
 }
