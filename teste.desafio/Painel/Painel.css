@@ -1,0 +1,353 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+form{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(23, 62, 90);
+    padding: 2rem;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #00ff88;
+}
+
+.btn-titulo{
+    border: none;
+    font-size: 25px;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(184, 26, 26);
+}
+
+.campos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 20px 0;
+    text-align: left;
+    align-items: flex-start;
+}
+
+label.teste{
+    text-align: left;
+    font-size: 20px;
+    /* margin-left: -52%; */
+    color:  blanchedalmond; 
+}
+
+.escrita{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+    background-color:  rgb(69, 119, 155) ;
+}
+
+.opcoes{
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color:rgba(23, 62, 90, 0.918);
+}
+
+.opcoes h1 {
+    font-size: 27px;
+    color: blanchedalmond; 
+    text-align: center;
+    line-height: 70px ;
+    background-color:rgba(23, 62, 90, 0.774);
+    user-select: none;
+}
+
+.icons-list {
+    margin-right: 5px;
+}
+
+.opcoes ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 25px;
+    color: blanchedalmond;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(23, 62, 90, 0.774);
+}
+
+ul li:hover{
+    padding-left: 50px;
+}
+
+.opcoes ul a li {
+    margin-right: 16px;
+}
+
+section{
+    background: url(img/IMG_7877.jpg) no-repeat ;
+    background-position: center;  
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+h1.procure{
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    color: aliceblue;
+
+}
+
+form.clientes{
+    display: flex;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: blanchedalmond;
+    background-color:  rgba(23, 62, 90, 0.774);
+    border-radius: 6px;
+    flex-direction: column;
+   
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.botao{
+    background-color:rgb(50, 109, 148) ;
+    width: 60px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: blanchedalmond;
+    cursor: pointer;
+    
+    
+}
+
+.botao2{
+    background-color:rgb(50, 109, 148) ;
+    width: 60px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: blanchedalmond;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 200;
+    
+}
+
+/* input[type='date']{
+    color: blanchedalmond;
+    width: 97%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.desativado{
+    /* visibility: hidden; */
+    display: none;
+}
+
+ 
+/* --------------PRODUTOS---------------------- */
+
+
+.titulo2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #00ff88;
+}
+
+.campos2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: left;
+    align-items: center;
+}
+
+label.teste2{
+    font-size: 20px;
+    color:  blanchedalmond; 
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes-pedidos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form.clientes2{
+    display: flex;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: blanchedalmond;
+    background-color:  rgba(23, 62, 90, 0.774);
+    border-radius: 6px;
+    flex-direction: column;
+   
+}
+
+/* ----------------------PEDIDOS------------------------ */
+
+.cliente3 {
+    /* display: flex; */
+    width: 60%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: blanchedalmond;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+.titulo3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #00ff88;
+}
+
+.campos3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: left;
+    align-items: center;
+}
+
+label.teste3{
+    font-size: 20px;
+    color:  blanchedalmond; 
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.localizar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.localizar input{
+    margin: 5px;
+}
+
+.localizar .numero{
+    width: 30%;
+}
+
+.localizar .lancar{
+    font-size: 17px;
+    padding-left:40px;
+    color:  rgba(16, 34, 48, 0.993);
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+input[type='number']{
+    padding-left: 10px;
+    color: blanchedalmond; 
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type='text']{
+    color: blanchedalmond;
+    padding-left: 10px;
+    width: 98%;
+}
+
+
+table tr td{
+    width: 200px;
+    /* justify-content: space-between;
+    margin-top: 5px; */
+}
+
+
+.itemClasse{
+    font-size: 20px;
+    color:  blanchedalmond; 
+}
+
+.final{
+    display: flex;
+    width: 100%;
+}
+
+#valorFinal{
+    width: 20%;
+    justify-content:end;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    outline: none;
+    background-color:  rgb(69, 119, 155) ;
+}
+
